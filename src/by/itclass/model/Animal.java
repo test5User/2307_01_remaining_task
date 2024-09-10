@@ -1,6 +1,7 @@
 package by.itclass.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.StringJoiner;
@@ -10,6 +11,7 @@ public abstract class Animal implements Comparable<Animal>{
     private long chipNumber;
     private Genus genus;
     private String name;
+    @Getter
     private LocalDate birthDate;
     private String breed;
     private String email;
